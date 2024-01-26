@@ -16,5 +16,7 @@ function decriptografar(){
   document.getElementById("resultadoTextarea").value = texto;
   
 }
-
+function copiar(){
+  
+}
 
