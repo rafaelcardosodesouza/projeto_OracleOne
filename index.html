@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/resources/style/style.css">
+  <title>Descriptografador</title>
+</head>
+
+<body>
+  <header>
+    Criptografa e descriptografa mensagens
+  </header>
+  <main>
+    <section class="textoOriginal">
+      <textarea id="originalTextarea" placeholder="criptografar/descriptografar"></textarea>
+    </section>
+    <section class="resultadoTexto">
+      <textarea id="resultadoTextarea" placeholder="resultado"></textarea>
+    </section>
+    <div>
+      <p class="aviso">Apenas letras minúsculas e sem acento.</p>
+      <button onclick="criptografar()">criptografar</button>
+      <button onclick="decriptografar()">descriptografar</button>
+    </div>
+  </main>
+  <footer id="rodape">
+    <p>Criado por Rafael Cardoso</p>
+  </footer>
+  <script src="/resources/js/funcionalidades.js"></script>
+</body>
+
+</html>
