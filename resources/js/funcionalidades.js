@@ -1,22 +1,31 @@
-let texto= " ";
+let texto = " ";
 
 function criptografar() {
-  // Obtém o valor digitado no originalTextarea
   var textoOriginal = document.getElementById("originalTextarea").value;
-  texto += textoOriginal + " passou pela a função criptografar";
+  let tempTexto = "";
+  const palavrasSecreta = { //é o objeto que vai armazenar as palavras secreta
+    e: "enter",
+    i: "imes",
+    a: "ai",
+    o: "ober",
+    u: "ufat"
+  };
 
-  console.log(textoOriginal);
-
+  for (let i = 0; i < textoOriginal.length; i++) {
+    if (textoOriginal[i] in palavrasSecreta) {//se o caracter da posição i do texto original estiver no objeto palavrasSecreta
+      tempTexto += palavrasSecreta[textoOriginal[i]];//adiciona a palavra secreta que está no objeto palavrasSecreta na posição i
+    } else {
+      tempTexto += textoOriginal[i];//se não estiver no objeto palavrasSecreta, adiciona o caracter da posição i do texto original
+    }
+  }
+  document.getElementById("resultadoTextarea").value = tempTexto;
 }
 
-function decriptografar(){
-  var textoOriginal = document.getElementById("originalTextarea").value;
+function decriptografar() {
 
-  //na linha de baixo estava textando se estava conseguindo fazer certo, agora testa criar a logica da criptografia e da descriptografia
-  document.getElementById("resultadoTextarea").value = texto;
-  
+
 }
-function copiar(){
-  
+function copiar() {
+
 }
 
