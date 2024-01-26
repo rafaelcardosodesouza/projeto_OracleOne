@@ -1,65 +1,93 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset de estilos padrão */
+body, h1, h2, h3, p, textarea, button {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  box-sizing: border-box;
 }
 
+/* Estilo global */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Estilo do header */
 header {
-  background-color: #333;
-  color: white;
-  padding: 10px;
   text-align: center;
+  padding: 20px;
+  background-color: #3498db; /* Azul */
+  color: #fff;
 }
 
+/* Estilo do main */
 main {
-  max-width: 800px;
-  margin: 20px auto;
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  width: 100%; /* Utiliza a largura total */
 }
 
 textarea {
-  width: 100%;
+  width: calc(50%); /* Largura total menos a margem interna */
   padding: 10px;
-  margin: 10px 0;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.aviso {
-  color: #ff4400;
-  font-size: 13px;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  align-content: center;
+  border: 1px solid #3498db; /* Azul */
+  border-radius: 5px;
+  margin-bottom: 10px;
+  resize: none;
   
 }
-
-button:hover {
-  background-color: #45a049;
+.aviso{
+  text-align: left;
+  margin-bottom: 3px;
+  font-size: 12px;
+  color: #a53c13;
+  
+}
+/* Estilo dos botões */
+button {
+  width: calc(100% - 20px); /* Largura total menos a margem interna */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #f0f0f0;
+  margin-bottom: 3px;
+}
+button:hover{
+  background-color: #2a7bb1
 }
 button.copia {
-  background-color: #f9a180;
-  padding: 5px 10px;
+  background-color: #4caf50; /* Verde */
+  color: #fff;
+}
+button.copia:hover{
+  background-color: #39853b;
 }
 button.copia:active{
-  background-color: #ff4400;
+  background-color: #8caf4c;
 }
 
-footer {
-  margin-top: 20px;
-  background-color: #333;
-  color: white;
+/* Estilo do aside */
+.menuLateral {
+  padding: 20px;
+  background-color: #2c3e50; /* Tom mais escuro para o menu lateral */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+/* Estilo do footer */
+#rodape {
   text-align: center;
   padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #3498db; /* Azul */
+  color: #fff;
 }
