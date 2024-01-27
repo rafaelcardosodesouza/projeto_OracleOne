@@ -1,5 +1,3 @@
-let texto = " ";
-
 function criptografar() {
   var textoOriginal = document.getElementById("originalTextarea").value;
   let tempTexto = "";
@@ -22,10 +20,23 @@ function criptografar() {
 }
 
 function decriptografar() {
+  let textoParaDescriptografar = document.getElementById("originalTextarea").value;
 
+  textoParaDescriptografar = textoParaDescriptografar.replace(/enter/g, 'e');
+  textoParaDescriptografar = textoParaDescriptografar.replace(/imes/g, 'i');
+  textoParaDescriptografar = textoParaDescriptografar.replace(/ai/g, 'a');
+  textoParaDescriptografar = textoParaDescriptografar.replace(/ober/g, 'o');
+  textoParaDescriptografar = textoParaDescriptografar.replace(/ufat/g, 'u');
 
+  document.getElementById("resultadoTextarea").value = textoParaDescriptografar;
 }
+
+
 function copiar() {
+  var resultadoTextarea = document.getElementById("resultadoTextarea");
+
+  resultadoTextarea.select();
+  document.execCommand("copy");
 
 }
 
