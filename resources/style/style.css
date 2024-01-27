@@ -22,6 +22,7 @@ header {
   padding: 25px;
   background-color: #3498db;
   color: #fff;
+  font-size: 24px;
 }
 
 
@@ -94,9 +95,14 @@ button.copia:active {
 }
 
 .menuLateral p {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.6;
   margin-bottom: 10px;
+  text-align: center;
+}
+
+.menuLateral h2 {
+  text-align: center;
 }
 
 
@@ -112,7 +118,10 @@ button.copia:active {
   width: 100%;
   background-color: #3498db;
   color: #ffffff;
+  font-size: 12px;
 }
+
+
 
 a {
   color: #fff;
@@ -123,6 +132,7 @@ a {
 a:hover {
   color: #ffc107;
 }
-aside{
+
+aside {
   margin-bottom: 20%;
 }
